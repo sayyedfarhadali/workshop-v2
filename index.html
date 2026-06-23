@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Personality Development Workshop | Munawwar Zama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse-border {
+            0%, 100% { border-color: rgba(234, 179, 8, 1); box-shadow: 0 0 15px rgba(234, 179, 8, 0.4); }
+            50% { border-color: rgba(234, 179, 8, 0.3); box-shadow: 0 0 5px rgba(234, 179, 8, 0.1); }
+        }
+        .highlight-box {
+            animation: pulse-border 3s infinite;
+        }
+        #registration-section {
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-yellow-500 selection:text-slate-900">
+
+    <!-- 1. HEADER & HERO SECTION -->
+    <header class="relative bg-slate-950 border-b-4 border-yellow-500 overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#fbbf24 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="container mx-auto px-6 py-16 md:py-20 relative z-10 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-3/5 text-center md:text-left mb-12 md:mb-0 pr-0 md:pr-8">
+                <p class="text-yellow-400 font-semibold tracking-widest uppercase text-sm mb-4">— A Great Place of Education —</p>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 tracking-wide">NEW ENGLISH PRIMARY SCHOOL (N.E.P.S.)</h2>
+                
+                <div class="inline-block bg-red-700 text-white px-6 py-2 rounded-full font-bold text-lg md:text-xl mb-6 shadow-lg shadow-red-900/50">
+                    ★★ MEGA ★★
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-yellow-300 to-yellow-600 leading-tight mb-4 drop-shadow-lg">
+                    PERSONALITY DEVELOPMENT<br>WORKSHOP
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-slate-300 font-medium tracking-[0.2em]">LEARN • LEAD • SUCCEED</p>
+            </div>
+
+            <div class="md:w-2/5 flex flex-col items-center">
+                <img src="speaker.jpg" 
+                     onerror="this.src='https://englishhouseacademy.in/wp-content/uploads/2025/10/Munawar-Zama-photos.png'" 
+                     alt="Munawwar Zama" 
+                     class="w-full max-w-sm rounded-t-2xl object-cover shadow-2xl border-t-4 border-l-4 border-r-4 border-yellow-500 h-80 object-top">
+                
+                <div class="w-full max-w-sm bg-gradient-to-b from-slate-800 to-slate-900 p-6 rounded-b-2xl border-b-4 border-l-4 border-r-4 border-yellow-500 shadow-2xl text-center">
+                    <p class="text-slate-400 uppercase tracking-widest text-[10px] sm:text-xs mb-1">Learn Directly from International Trainer</p>
+                    <h3 class="text-2xl sm:text-3xl font-black text-white mb-1 tracking-wider">MUNAWWAR ZAMA</h3>
+                    <p class="text-yellow-400 font-bold text-xs sm:text-sm">International Personality Development Trainer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. WORKSHOP DETAILS GRID -->
+    <section class="py-16 bg-slate-900">
+        <div class="container mx-auto px-6 max-w-6xl">
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-16">
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition duration-300">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h4 class="font-bold text-white uppercase text-sm md:text-base">Build Confidence</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition duration-300">
+                    <div class="text-4xl mb-4">🎙️</div>
+                    <h4 class="font-bold text-white uppercase text-sm md:text-base">Improve Communication</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition duration-300">
+                    <div class="text-4xl mb-4">👥</div>
+                    <h4 class="font-bold text-white uppercase text-sm md:text-base">Develop Leadership</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition duration-300">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h4 class="font-bold text-white uppercase text-sm md:text-base">Achieve Success</h4>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+                        <div class="bg-blue-900 px-6 py-4 border-b border-blue-800">
+                            <h3 class="text-xl font-bold text-white text-center">WORKSHOP HIGHLIGHTS</h3>
+                        </div>
+                        <ul class="p-6 space-y-4">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-yellow-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="font-medium">Communication Skills</span></li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-yellow-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="font-medium">Public Speaking Skills</span></li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-yellow-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="font-medium">Confidence Building</span></li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-yellow-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="font-medium">Character Building</span></li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-yellow-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="font-medium">Leadership Skills</span></li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-yellow-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> <span class="font-medium">Life Success Strategies</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+                        <div class="bg-red-900 px-6 py-4 border-b border-red-800">
+                            <h3 class="text-xl font-bold text-white text-center">WORKSHOP DATES</h3>
+                        </div>
+                        <div class="p-6 text-center">
+                            <p class="text-2xl font-bold text-white mb-1">25th July 2026</p>
+                            <p class="text-slate-400 text-sm font-bold uppercase tracking-widest my-2">to</p>
+                            <p class="text-2xl font-bold text-white mb-2">23rd August 2026</p>
+                            <span class="inline-block bg-slate-900 text-red-400 border border-red-500/50 text-xs px-3 py-1 rounded-full font-semibold">1 MONTH IMMERSIVE TRAINING</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+                        <div class="bg-blue-900 px-6 py-4 border-b border-blue-800">
+                            <h3 class="text-xl font-bold text-white text-center">WORKSHOP TIMINGS</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between p-4 bg-slate-900 rounded-lg border border-slate-700">
+                                <div class="flex items-center"><span class="text-3xl mr-4">☀️</span> <span class="font-bold text-lg">Morning Session</span></div>
+                                <div class="text-right"><span class="block font-bold text-yellow-400">7:30 AM</span><span class="block text-sm text-slate-400">TO 10:00 AM</span></div>
+                            </div>
+                            <div class="flex items-center justify-between p-4 bg-slate-900 rounded-lg border border-slate-700">
+                                <div class="flex items-center"><span class="text-3xl mr-4">🌙</span> <span class="font-bold text-lg">Evening Session</span></div>
+                                <div class="text-right"><span class="block font-bold text-yellow-400">7:30 PM</span><span class="block text-sm text-slate-400">TO 10:00 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+                        <div class="bg-yellow-600 px-6 py-4 border-b border-yellow-700">
+                            <h3 class="text-xl font-bold text-slate-900 text-center">WORKSHOP VENUE</h3>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h4 class="text-2xl font-bold text-white mb-1">Aadarsh Hotel</h4>
+                            <p class="text-slate-300 mb-4">Beed Bypass, Aurangabad</p>
+                            <span class="inline-block bg-slate-900 text-yellow-400 border border-yellow-500 text-xs px-3 py-1 rounded-full font-semibold">FREE PARKING FACILITY AVAILABLE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 flex flex-wrap justify-center gap-4 text-sm font-medium text-slate-300">
+                <span class="bg-slate-800 px-4 py-2 rounded-full border border-slate-700">🌿 Peaceful Environment</span>
+                <span class="bg-slate-800 px-4 py-2 rounded-full border border-slate-700">🏛️ Proper Auditorium</span>
+                <span class="bg-slate-800 px-4 py-2 rounded-full border border-slate-700">🤝 Interactive Sessions</span>
+                <span class="bg-slate-800 px-4 py-2 rounded-full border border-slate-700">📜 Certificate of Participation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PRICING & CALL TO ACTION -->
+    <section class="py-16 bg-slate-950 border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center max-w-3xl">
+            <div class="mb-10 text-red-500 font-bold text-2xl md:text-3xl animate-pulse">
+                ⚠️ HURRY! LIMITED REGISTRATIONS WILL BE ACCEPTED.
+            </div>
+
+            <div class="highlight-box bg-slate-900 border-2 border-yellow-500 rounded-2xl p-8 mb-10 shadow-2xl">
+                <h3 class="text-slate-400 text-lg uppercase tracking-wide mb-2">Total Workshop Fee</h3>
+                <div class="text-5xl font-black text-white mb-6">₹10,000</div>
+                
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+                    <p class="text-xl text-slate-200 mb-2">Secure your spot today by paying just</p>
+                    <div class="text-6xl font-black text-yellow-400 mb-4">₹1,000<span class="text-xl text-slate-400 font-normal"> now</span></div>
+                    <p class="text-red-400 text-sm md:text-base font-medium">
+                        * The remaining balance of ₹9,000 must be paid before 20th July 2026.
+                    </p>
+                </div>
+            </div>
+
+            <button id="show-form-btn" class="w-full md:w-auto px-12 py-5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-slate-900 font-black text-2xl rounded-full shadow-[0_0_20px_rgba(234,179,8,0.4)] hover:shadow-[0_0_30px_rgba(234,179,8,0.6)] hover:scale-105 transition-all duration-300">
+                ENROLL NOW
+            </button>
+        </div>
+    </section>
+
+    <!-- 4. REGISTRATION FORM (Revealed via JS) -->
+    <section id="registration-section" class="py-20 bg-slate-900 hidden opacity-0">
+        <div class="container mx-auto px-4 sm:px-6 max-w-4xl bg-slate-800 p-6 md:p-12 rounded-3xl shadow-2xl border border-slate-700">
+            
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-white mb-2">Complete Registration</h2>
+                <p class="text-slate-400">Fill in your details accurately to lock in your seat for the workshop.</p>
+            </div>
+
+            <form id="workshop-form" class="space-y-10">
+                
+                <!-- SECTION 1: Personal Details -->
+                <div class="space-y-6 bg-slate-900/50 p-6 rounded-2xl border border-slate-700/50">
+                    <h3 class="text-xl font-bold text-yellow-500 border-b border-slate-700 pb-2">1. Personal Details</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Full Name (As per Aadhar Card) *</label>
+                            <input type="text" name="Name" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+
+                        <div>
+                            <!-- ADDED MINIMUM AGE (12 years) RESTRICTION HERE -->
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Date of Birth * <span class="text-xs text-slate-500 font-normal">(Min 12 years old)</span></label>
+                            <input type="date" name="DOB" max="2014-06-24" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Gender *</label>
+                            <select name="Gender" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition appearance-none">
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">WhatsApp Number *</label>
+                            <input type="tel" name="WhatsApp" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Alternate Phone Number</label>
+                            <input type="tel" name="AlternateNumber" class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Email Address *</label>
+                            <input type="email" name="Email" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 2: Education & Occupation -->
+                <div class="space-y-6 bg-slate-900/50 p-6 rounded-2xl border border-slate-700/50">
+                    <h3 class="text-xl font-bold text-yellow-500 border-b border-slate-700 pb-2">2. Education & Occupation</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Highest Qualification *</label>
+                            <select name="HighestQualification" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition appearance-none">
+                                <option value="" disabled selected>Select Qualification</option>
+                                <option value="Below 10th">Below 10th</option>
+                                <option value="10th">10th</option>
+                                <option value="12th">12th</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Post Graduate">Post Graduate</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Current Occupation *</label>
+                            <select name="Occupation" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition appearance-none">
+                                <option value="" disabled selected>Select Occupation</option>
+                                <option value="Student">Student</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Business">Business</option>
+                                <option value="Housewife">Housewife</option>
+                                <option value="Unemployed">Unemployed</option>
+                            </select>
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">School / College Name *</label>
+                            <input type="text" name="SchoolCollege" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 3: Parents Details -->
+                <div class="space-y-6 bg-slate-900/50 p-6 rounded-2xl border border-slate-700/50">
+                    <h3 class="text-xl font-bold text-yellow-500 border-b border-slate-700 pb-2">3. Parents Details</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Father's Name *</label>
+                            <input type="text" name="FatherName" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Father's Occupation *</label>
+                            <input type="text" name="FatherOccupation" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Mother's Name *</label>
+                            <input type="text" name="MotherName" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Mother's Occupation *</label>
+                            <input type="text" name="MotherOccupation" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 4: Address Details (Simplified for Google Sheets) -->
+                <div class="space-y-6 bg-slate-900/50 p-6 rounded-2xl border border-slate-700/50">
+                    <h3 class="text-xl font-bold text-yellow-500 border-b border-slate-700 pb-2">4. Address Details</h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Present Address *</label>
+                            <textarea id="PresentAddress" name="PresentAddress" rows="3" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 pb-2">
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" id="same-address-checkbox" class="w-5 h-5 text-yellow-500 bg-slate-900 border-slate-600 rounded focus:ring-yellow-500 focus:ring-2">
+                            <span class="text-slate-200 font-medium">Permanent address is same as present address</span>
+                        </label>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">Permanent Address *</label>
+                            <textarea id="PermanentAddress" name="PermanentAddress" rows="3" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 5: Identity & Preferences -->
+                <div class="space-y-6 bg-slate-900/50 p-6 rounded-2xl border border-slate-700/50">
+                    <h3 class="text-xl font-bold text-yellow-500 border-b border-slate-700 pb-2">5. Identity & Workshop Session</h3>
+                    
+                    <div class="space-y-4">
+                        <label class="block text-sm font-semibold text-slate-300">Upload Aadhar Card (PDF or Image) *</label>
+                        <input type="file" id="docUpload" accept=".pdf, image/*" required class="block w-full text-sm text-slate-400 file:mr-4 file:py-3 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-slate-700 file:text-white hover:file:bg-slate-600 transition cursor-pointer bg-slate-900 border border-slate-600 rounded-xl">
+                        
+                        <!-- Hidden field to hold the converted file data for Google Sheets -->
+                        <input type="hidden" name="DocumentData" id="DocumentData">
+
+                        <label class="flex items-start space-x-3 mt-3 cursor-pointer">
+                            <input type="checkbox" required class="w-5 h-5 mt-0.5 text-yellow-500 bg-slate-900 border-slate-600 rounded focus:ring-yellow-500 focus:ring-2">
+                            <span class="text-slate-300 text-sm">I agree to share my Aadhar details strictly for identification purposes for this workshop.</span>
+                        </label>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-700/50">
+                        <label class="block text-sm font-semibold text-slate-300 mb-3">Preferred Workshop Session *</label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <label class="flex items-center justify-center p-4 border border-slate-600 rounded-xl cursor-pointer hover:bg-slate-700 transition has-[:checked]:bg-blue-900/50 has-[:checked]:border-blue-500">
+                                <input type="radio" name="Session" value="Morning Batch" required class="w-4 h-4 text-blue-600 bg-slate-900 border-slate-600 focus:ring-blue-500 focus:ring-2 mr-2">
+                                <span class="text-slate-200 font-medium">Morning (7:30 AM to 10:00 AM)</span>
+                            </label>
+                            <label class="flex items-center justify-center p-4 border border-slate-600 rounded-xl cursor-pointer hover:bg-slate-700 transition has-[:checked]:bg-blue-900/50 has-[:checked]:border-blue-500">
+                                <input type="radio" name="Session" value="Evening Batch" required class="w-4 h-4 text-blue-600 bg-slate-900 border-slate-600 focus:ring-blue-500 focus:ring-2 mr-2">
+                                <span class="text-slate-200 font-medium">Evening (7:30 PM to 10:00 PM)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 6: Undertakings & Finalization -->
+                <div class="space-y-6 bg-slate-900/50 p-6 rounded-2xl border border-slate-700/50">
+                    <h3 class="text-xl font-bold text-yellow-500 border-b border-slate-700 pb-2">6. Declarations & Payment</h3>
+                    
+                    <div class="space-y-5">
+                        <div class="bg-red-950/30 border border-red-900 p-4 rounded-xl">
+                            <p class="text-red-400 font-bold mb-3">I understand that I will have to pay the remaining ₹9,000 before 20th July 2026.</p>
+                            <label class="flex items-start space-x-3 cursor-pointer">
+                                <input type="checkbox" required class="w-5 h-5 mt-0.5 text-red-500 bg-slate-900 border-slate-600 rounded focus:ring-red-500 focus:ring-2">
+                                <span class="text-slate-200 font-medium">Yes, I will pay the remaining total workshop fee of ₹9,000 before 20th July 2026.</span>
+                            </label>
+                        </div>
+
+                        <!-- ADDED TERMS & CONDITIONS CHECKBOX HERE -->
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                            <label class="flex items-start space-x-3 cursor-pointer">
+                                <input type="checkbox" required class="w-5 h-5 mt-0.5 text-blue-500 bg-slate-900 border-slate-600 rounded focus:ring-blue-500 focus:ring-2">
+                                <span class="text-slate-200">I have read the <a href="terms.html" target="_blank" class="text-yellow-400 underline hover:text-yellow-300 font-semibold">Terms and Conditions</a> and agree to comply with them.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-700">
+                        <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                            <span class="text-lg text-slate-300 mb-2 md:mb-0">Registration Fee to Pay Now:</span>
+                            <span class="text-4xl font-black text-yellow-400 bg-slate-900 px-6 py-2 rounded-xl border border-yellow-500/30 shadow-[0_0_15px_rgba(234,179,8,0.2)]">₹1,000</span>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="w-full flex justify-center items-center px-8 py-5 bg-blue-600 text-white font-extrabold text-xl rounded-xl shadow-lg hover:bg-blue-700 transform hover:-translate-y-1 transition duration-200">
+                            Submit & Proceed to Pay ₹1,000
+                            <svg class="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 py-8 border-t border-slate-800 text-center text-slate-500">
+        <p>Invest in Yourself Today — Transform Your Future Tomorrow!</p>
+        <p class="mt-2 text-sm">For Registration & More Info: +91 81490 21405</p>
+    </footer>
+
+    <!-- INTERACTIVITY & GOOGLE SHEETS SCRIPT -->
+    <script>
+        // --- Reveal Form Logic ---
+        const ctaBtn = document.getElementById('show-form-btn');
+        const formSection = document.getElementById('registration-section');
+
+        ctaBtn.addEventListener('click', () => {
+            formSection.classList.remove('hidden');
+            setTimeout(() => {
+                formSection.classList.remove('opacity-0');
+                formSection.classList.add('opacity-100');
+                formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 50);
+            ctaBtn.textContent = "Please Fill the Form Below 👇";
+            ctaBtn.classList.add('opacity-80', 'cursor-default');
+        });
+
+        // --- Address Copy Logic ---
+        const presentAddr = document.getElementById('PresentAddress');
+        const permanentAddr = document.getElementById('PermanentAddress');
+        const copyCheck = document.getElementById('same-address-checkbox');
+
+        copyCheck.addEventListener('change', function() {
+            if (this.checked) {
+                permanentAddr.value = presentAddr.value;
+                permanentAddr.readOnly = true;
+                permanentAddr.style.opacity = "0.6"; 
+            } else {
+                permanentAddr.value = '';
+                permanentAddr.readOnly = false;
+                permanentAddr.style.opacity = "1";
+            }
+        });
+
+        presentAddr.addEventListener('input', function() {
+            if (copyCheck.checked) permanentAddr.value = presentAddr.value;
+        });
+
+        // --- File Upload / Base64 Converter Logic ---
+        document.getElementById('docUpload').addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                if(file.size > 3 * 1024 * 1024) {
+                    alert("File is too large! Please upload a file smaller than 3MB.");
+                    this.value = ""; 
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    document.getElementById('DocumentData').value = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // --- Form Submission & Payment Redirect Logic ---
+        
+        // !!! IMPORTANT: PASTE YOUR GOOGLE SCRIPT URL AND RAZORPAY LINK BELOW !!!
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwaKmAnp8LGjdzvKjh2pQUmk8YTHBd8TNOTjf3l4jQYTK86KOGHprbAKOFt00VaFujVJQ/exec'; 
+        const razorpayLink = 'https://rzp.io/rzp/vfThCst';
+        
+        const form = document.getElementById('workshop-form');
+        const submitBtn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault(); 
+            
+            // UI change while processing
+            submitBtn.innerHTML = "Processing Details & Uploading... ⏳";
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-wait');
+
+            // Send to Google Sheets
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                // Success! Redirect to Razorpay Link
+                window.location.href = razorpayLink;
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert("Something went wrong. Please check your internet connection and try again.");
+                
+                // Reset button
+                submitBtn.innerHTML = "Submit & Proceed to Pay ₹1,000";
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-wait');
+            });
+        });
+    </script>
+</body>
+</html>
