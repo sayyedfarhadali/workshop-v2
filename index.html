@@ -172,9 +172,11 @@
         </div>
     </section>
 
-    <!-- 4. REGISTRATION FORM (Revealed via JS) -->
+    <!-- 4. REGISTRATION & INVOICE FLOW SECTOR -->
     <section id="registration-section" class="py-20 bg-slate-900 hidden opacity-0">
-        <div class="container mx-auto px-4 sm:px-6 max-w-4xl bg-slate-800 p-6 md:p-12 rounded-3xl shadow-2xl border border-slate-700">
+        
+        <!-- STEP 4A: THE REGISTRATION FORM CONTAINER -->
+        <div id="form-container" class="container mx-auto px-4 sm:px-6 max-w-4xl bg-slate-800 p-6 md:p-12 rounded-3xl shadow-2xl border border-slate-700">
             
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-extrabold text-white mb-2">Complete Registration</h2>
@@ -193,7 +195,6 @@
                         </div>
 
                         <div>
-                            <!-- ADDED MINIMUM AGE (12 years) RESTRICTION HERE -->
                             <label class="block text-sm font-semibold text-slate-300 mb-2">Date of Birth * <span class="text-xs text-slate-500 font-normal">(Min 12 years old)</span></label>
                             <input type="date" name="DOB" max="2014-06-24" required class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition">
                         </div>
@@ -283,7 +284,7 @@
                     </div>
                 </div>
 
-                <!-- SECTION 4: Address Details (Simplified for Google Sheets) -->
+                <!-- SECTION 4: Address Details -->
                 <div class="space-y-6 bg-slate-900/50 p-6 rounded-2xl border border-slate-700/50">
                     <h3 class="text-xl font-bold text-yellow-500 border-b border-slate-700 pb-2">4. Address Details</h3>
                     
@@ -317,7 +318,6 @@
                         <label class="block text-sm font-semibold text-slate-300">Upload Aadhar Card (PDF or Image) *</label>
                         <input type="file" id="docUpload" accept=".pdf, image/*" required class="block w-full text-sm text-slate-400 file:mr-4 file:py-3 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-slate-700 file:text-white hover:file:bg-slate-600 transition cursor-pointer bg-slate-900 border border-slate-600 rounded-xl">
                         
-                        <!-- Hidden field to hold the converted file data for Google Sheets -->
                         <input type="hidden" name="DocumentData" id="DocumentData">
 
                         <label class="flex items-start space-x-3 mt-3 cursor-pointer">
@@ -354,7 +354,6 @@
                             </label>
                         </div>
 
-                        <!-- ADDED TERMS & CONDITIONS CHECKBOX HERE -->
                         <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
                             <label class="flex items-start space-x-3 cursor-pointer">
                                 <input type="checkbox" required class="w-5 h-5 mt-0.5 text-blue-500 bg-slate-900 border-slate-600 rounded focus:ring-blue-500 focus:ring-2">
@@ -369,14 +368,50 @@
                             <span class="text-4xl font-black text-yellow-400 bg-slate-900 px-6 py-2 rounded-xl border border-yellow-500/30 shadow-[0_0_15px_rgba(234,179,8,0.2)]">₹1,000</span>
                         </div>
 
+                        <!-- MODIFIED BUTTON FOR STEP-BY-STEP CHECKOUT -->
                         <button type="submit" id="submitBtn" class="w-full flex justify-center items-center px-8 py-5 bg-blue-600 text-white font-extrabold text-xl rounded-xl shadow-lg hover:bg-blue-700 transform hover:-translate-y-1 transition duration-200">
-                            Submit & Proceed to Pay ₹1,000
+                            Submit and Proceed to Checkout
                             <svg class="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </button>
                     </div>
                 </div>
             </form>
         </div>
+
+        <!-- STEP 4B: THE HIDDEN INVOICE BREAKDOWN & PAYMENT GATEWAY CONTAINER -->
+        <div id="checkout-container" style="display: none;" class="container mx-auto px-4 sm:px-6 max-w-xl bg-slate-800 p-6 md:p-12 rounded-3xl shadow-2xl border-2 border-yellow-500 text-center">
+            
+            <h2 class="text-3xl font-black text-white mb-2 tracking-wide">Checkout Summary</h2>
+            <p class="text-slate-400 text-sm mb-8">Your information has been logged successfully. Please complete your transaction below to lock your workshop enrollment seat.</p>
+            
+            <div class="bg-slate-950 p-6 rounded-2xl border border-slate-700 text-left space-y-4 mb-8">
+                <div class="flex justify-between text-slate-300 text-base">
+                    <span>Workshop amount</span>
+                    <span class="font-bold text-white">₹1,000.00</span>
+                </div>
+                <div class="flex justify-between text-slate-300 text-base">
+                    <span>Platform fee</span>
+                    <span class="font-bold text-white">₹30.00</span>
+                </div>
+                <div class="border-t border-slate-800 my-2"></div>
+                <div class="flex justify-between text-xl font-black text-yellow-400">
+                    <span>Total Payable Amount</span>
+                    <span>₹1,030.00</span>
+                </div>
+            </div>
+
+            <!-- RAZORPAY PAYMENT BUTTON EMBEDDING ZONE -->
+            <div id="razorpay-button-box" class="bg-slate-900 p-6 rounded-2xl border border-slate-700 flex flex-col justify-center items-center min-h-[100px]">
+                
+                <!-- !!! STEP 2: PASTE YOUR ENTIRE RAZORPAY CODE BLOB EXACTLY OVER THE LINE BELOW !!! -->
+               <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_T5QiZCFp5q7RoK" async> </script> </form>
+            </div>
+
+            <p class="text-xs text-slate-500 mt-4 leading-relaxed">
+                * Safe & Secure Encryption via Razorpay Core Service. <br>Your registration completes automatically upon payment confirmation.
+            </p>
+        </div>
+
     </section>
 
     <!-- FOOTER -->
@@ -440,14 +475,13 @@
             }
         });
 
-        // --- Form Submission & Payment Redirect Logic ---
-        
-        // !!! IMPORTANT: PASTE YOUR GOOGLE SCRIPT URL AND RAZORPAY LINK BELOW !!!
+        // --- Form Submission & Payment Transition Logic ---
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwaKmAnp8LGjdzvKjh2pQUmk8YTHBd8TNOTjf3l4jQYTK86KOGHprbAKOFt00VaFujVJQ/exec'; 
-        const razorpayLink = 'https://rzp.io/rzp/BvbgW0w9';
         
         const form = document.getElementById('workshop-form');
         const submitBtn = document.getElementById('submitBtn');
+        const formContainer = document.getElementById('form-container');
+        const checkoutContainer = document.getElementById('checkout-container');
 
         form.addEventListener('submit', e => {
             e.preventDefault(); 
@@ -460,15 +494,19 @@
             // Send to Google Sheets
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response => {
-                // Success! Redirect to Razorpay Link
-                window.location.href = razorpayLink;
+                // Success! Transition out form and unhide payment dashboard
+                formContainer.style.display = 'none';
+                checkoutContainer.style.display = 'block';
+                
+                // Scroll beautifully down to the invoice section view
+                checkoutContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
             })
             .catch(error => {
                 console.error('Error!', error.message);
                 alert("Something went wrong. Please check your internet connection and try again.");
                 
                 // Reset button
-                submitBtn.innerHTML = "Submit & Proceed to Pay ₹1,000";
+                submitBtn.innerHTML = "Submit and Proceed to Checkout";
                 submitBtn.disabled = false;
                 submitBtn.classList.remove('opacity-75', 'cursor-wait');
             });
